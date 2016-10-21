@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
     var db = req.db;
     var products = db.get('products')
     products.find({}).then(function(docs) {
-        res.render('index', { title: 'Express' });
+        res.render('404', { title: 'Express' });
     })
 });
 
