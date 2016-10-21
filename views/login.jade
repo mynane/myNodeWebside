@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    div.login-content
+        div.title #{title}
+        form#formAddUser.formAddUser(name="postLogin",method="post",action="/postLogin")
+        //- span.reminde-text 账户:
+        input#inputUserName.inputUserName(type="text", placeholder="username/useremail", name="username")
+        //- span.reminde-text 密码:
+        input#inputUserPassword.inputUserPassword(type="password", placeholder="userpassword", name="useruseremail")
+        div.notAccount
+            a(href='/registe' title='点击注册') 点击注册
+        button#btnSubmit.btnSubmit(type="submit") submit

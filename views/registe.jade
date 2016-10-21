@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div.login-content
+        div.title #{title}
+        form#formAddUser.formAddUser(name="login",method="post",action="/login")
+        input#inputUserName.inputUserName(type="text", placeholder="username", name="username")
+        input#inputUserEmail.inputUserEmail(type="text", placeholder="useremail", name="useremail")
+        input#inputUserPassword.inputUserPassword(type="password", placeholder="userpassword", name="useruseremail")
+        div.notAccount
+            a(href='/login' title='返回登录') 返回登录
+        button#btnSubmit.btnSubmit(type="submit") submit
