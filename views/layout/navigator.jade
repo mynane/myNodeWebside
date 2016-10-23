@@ -1,5 +1,31 @@
-//- div
-//-     ul
-//-     each item in data
-//-         li
-            //- a(href="#{item.route}") #{item.name}
+.header-top
+    .container
+        .head-top
+            .logo
+                h1
+                    a(href='index')
+                        span  G
+                        span C
+            .top-nav
+                span.menu
+                    img(src='images/menu.png', alt='')
+                ul
+                    li.active
+                        a.color1(href='index') Home
+                    li
+                        a.color2(href='games') Games
+                    li
+                        a.color3(href='reviews') Reviews
+                    li
+                        a.color4(href='404') News
+                    li
+                        a.color5(href='blog') Blog
+                    li
+                        a.color6(href='contact') Contact
+                    .clearfix  
+                // script
+                script.
+                    $("span.menu").click(function() {
+                    $(".top-nav ul").slideToggle(500, function() {});
+                    });
+            .clearfix

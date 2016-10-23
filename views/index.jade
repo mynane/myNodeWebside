@@ -1,5 +1,150 @@
-extends layout
+extends layout/main
 
 block content
-  h1= title
-  p Welcome to #{title}
+		// content
+		.content
+			.container
+				.content-top
+					h2.new NEW GAMES
+					.wrap
+						.main
+							ul#og-grid.og-grid
+								li
+									a(href='#', data-largesrc='images/1.jpg', data-title='Subway Surfers', data-description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.')
+										img.img-responsive(src='images/thumbs/1.jpg', alt='img01')
+								li
+									a(href='#', data-largesrc='images/2.jpg', data-title='Angry Birds', data-description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.')
+										img.img-responsive(src='images/thumbs/2.jpg', alt='img02')
+								li
+									a(href='#', data-largesrc='images/3.jpg', data-title='Bike Games', data-description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.')
+										img.img-responsive(src='images/thumbs/3.jpg', alt='img03')
+								li
+									a(href='#', data-largesrc='images/4.jpg', data-title='Temple Run', data-description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.')
+										img.img-responsive(src='images/thumbs/4.jpg', alt='img01')
+								li
+									a(href='#', data-largesrc='images/5.jpg', data-title='Car Games', data-description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.')
+										img.img-responsive(src='images/thumbs/5.jpg', alt='img01')
+								li
+									a(href='#', data-largesrc='images/6.jpg', data-title='Fite Games', data-description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.')
+										img.img-responsive(src='images/thumbs/6.jpg', alt='img02')
+								li
+									a(href='#', data-largesrc='images/7.jpg', data-title='Fite Games', data-description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.')
+										img.img-responsive(src='images/thumbs/7.jpg', alt='img03')
+								li
+									a(href='#', data-largesrc='images/8.jpg', data-title='Panda Game', data-description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.')
+										img.img-responsive(src='images/thumbs/8.jpg', alt='img01')
+								.clearfix  
+				script(src='js/grid.js')
+				script.
+					$(function() {
+					Grid.init();
+					});
+			// -
+			.col-mn
+				.container
+					.col-mn2
+						h3 The Best Features
+						p
+						a.more-in(href='single.html') Read More
+			// 
+			.copyrights
+				a(href='http://www.cssmoban.com/', title='网站模板') &#x7F51;&#x7AD9;&#x6A21;&#x677F;
+			.featured
+				.container
+					.col-md-4.latest
+						h4 Latest
+						.late
+							a.fashion(href='single.html')
+								img.img-responsive(src='images/la.jpg', alt='')
+							.grid-product
+								span 6 Apr, 2015
+								p
+									a(href='single.html')  Ipsum dolor sit amet, consectetuer adipiscing elit,it has roots 
+								a.comment(href='single.html')
+									i  
+							.clearfix  
+						.late
+							a.fashion(href='single.html')
+								img.img-responsive(src='images/la1.jpg', alt='')
+							.grid-product
+								span 6 Apr, 2015
+								p
+									a(href='single.html')  Ipsum dolor sit amet, consectetuer adipiscing elit,it has roots 
+								a.comment(href='single.html')
+									i  
+							.clearfix  
+						.late
+							a.fashion(href='single.html')
+								img.img-responsive(src='images/la2.jpg', alt='')
+							.grid-product
+								span 6 Apr, 2015
+								p
+									a(href='single.html')  Ipsum dolor sit amet, consectetuer adipiscing elit,it has roots 
+								a.comment(href='single.html')
+									i  
+							.clearfix  
+					.col-md-4.latest
+						h4 Featured
+						.late
+							a.fashion(href='single.html')
+								img.img-responsive(src='images/la3.jpg', alt='')
+							.grid-product
+								span 6 Apr, 2015
+								p
+									a(href='single.html')  Ipsum dolor sit amet, consectetuer adipiscing elit,it has roots 
+								a.comment(href='single.html')
+									i  
+							.clearfix  
+						.late
+							a.fashion(href='single.html')
+								img.img-responsive(src='images/la2.jpg', alt='')
+							.grid-product
+								span 6 Apr, 2015
+								p
+									a(href='single.html')  Ipsum dolor sit amet, consectetuer adipiscing elit,it has roots 
+								a.comment(href='single.html')
+									i  
+							.clearfix  
+						.late
+							a.fashion(href='single.html')
+								img.img-responsive(src='images/la1.jpg', alt='')
+							.grid-product
+								span 6 Apr, 2015
+								p
+									a(href='single.html')  Ipsum dolor sit amet, consectetuer adipiscing elit,it has roots 
+								a.comment(href='single.html')
+									i  
+							.clearfix  
+					.col-md-4.latest
+						h4 Popular
+						.late
+							a.fashion(href='single.html')
+								img.img-responsive(src='images/la1.jpg', alt='')
+							.grid-product
+								span 6 Apr, 2015
+								p
+									a(href='single.html')  Ipsum dolor sit amet, consectetuer adipiscing elit,it has roots 
+								a.comment(href='single.html')
+									i  
+							.clearfix  
+						.late
+							a.fashion(href='single.html')
+								img.img-responsive(src='images/la.jpg', alt='')
+							.grid-product
+								span 6 Apr, 2015
+								p
+									a(href='single.html')  Ipsum dolor sit amet, consectetuer adipiscing elit,it has roots 
+								a.comment(href='single.html')
+									i  
+							.clearfix  
+						.late
+							a.fashion(href='single.html')
+								img.img-responsive(src='images/la3.jpg', alt='')
+							.grid-product
+								span 6 Apr, 2015
+								p
+									a(href='single.html')  Ipsum dolor sit amet, consectetuer adipiscing elit,it has roots 
+								a.comment(href='single.html')
+									i  
+							.clearfix  
+					.clearfix  
